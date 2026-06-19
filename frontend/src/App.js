@@ -5,7 +5,7 @@ function App() {
   const [items, setItems] = useState([]);
   const [name, setName] = useState('');
   const API_BASE_URL =
-    process.env.REACT_APP_API_BASE_URL || 'http://34.226.213.153:5000';
+    process.env.REACT_APP_API_BASE_URL || 'http://54.197.167.244:5000';
 
   const fetchItems = useCallback(async () => {
     const res = await axios.get(`${API_BASE_URL}/api/items`);
